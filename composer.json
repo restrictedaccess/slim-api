@@ -1,0 +1,53 @@
+{
+    "name": "slim/slim-skeleton",
+    "description": "A Slim Framework skeleton application for rapid development",
+    "keywords": ["microframework","rest","router", "psr7"],
+    "homepage": "http://github.com/slimphp/Slim-Skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Lockhart",
+            "email": "info@joshlockhart.com",
+            "homepage": "http://www.joshlockhart.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "doctrine/orm": "2.4.*",
+        "symfony/yaml": "2.*",
+        "doctrine/mongodb-odm": "1.0.5",
+        "phpunit/phpunit": "5.4.*",
+        "phpunit/php-invoker": "*",
+        "phpunit/dbunit": ">=1.2",
+        "pda/pheanstalk": "3.0.2",
+        "php-http/message":"@stable",
+        "php-http/discovery":"@stable",
+        "guzzlehttp/psr7":"@stable",
+        "php-http/guzzle6-adapter":"@stable",
+        "mailgun/mailgun-php":"@stable",
+        "solarium/solarium":"@stable",
+        "vlucas/valitron":"@stable",
+        "dready92/php-on-couch":"@stable",
+        "chobie/jira-api-restclient": "^2.0@dev"
+    },
+    "autoload":{
+        "psr-4":{
+            "RemoteStaff\\":"src\\classes",
+            "RemoteStaff\\Entities\\":"src\\entities",
+            "RemoteStaff\\Resources\\":"src\\resources",
+            "RemoteStaff\\Documents\\":"src\\documents",
+            "RemoteStaff\\CouchDocuments\\":"src\\couch_documents",
+            "RemoteStaff\\Mongo\\Resources\\":"src\\mongo_resources",
+            "RemoteStaff\\Workers\\":"src\\workers",
+            "RemoteStaff\\Exceptions\\":"src\\exceptions",
+            "RemoteStaff\\Solr\\Resources\\":"src\\solr_resources",
+            "RemoteStaff\\Tests\\":"src\\tests",
+            "RemoteStaff\\States\\Recruitment\\":"src\\states\\recruitment",
+            "RemoteStaff\\Interfaces\\":"src\\interfaces",
+            "RemoteStaff\\Components\\":"src\\components"
+        }
+    }
+}

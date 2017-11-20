@@ -1,0 +1,49 @@
+<img src="http://www.remotestaff.com.au/remotestaff_2015/img/rs-fb-header.png" style="height: 75px;">
+
+<p class="" style="margin-top: 20px;font-size: 15px;">Good Day! <?php echo $name; ?></p>
+
+<p class="" style="margin-top: 10px;font-size: 15px;">Please be inform that a new change request form has been filled up <span style="font-weight: bold;"><?php echo $id; ?></span>.</p>
+
+<br>
+
+<p class="description" style="margin-top: 10px;font-size: 15px;"> <span style="font-weight: bold;">Change Request ID: </span><?php echo $id; ?></p>
+
+<p class="description" style="margin-top: 10px;font-size: 15px;"> <span style="font-weight: bold;">Title: </span><?php echo $title; ?></p>
+
+<p class="description" style="margin-top: 10px;font-size: 15px;"> <span style="font-weight: bold;">Description: </span><?php echo $description; ?></p>
+
+<p class="description" style="margin-top: 10px;font-size: 15px;"> <span style="font-weight: bold;">Story: </span><?php echo $story; ?></p>
+
+<br>
+
+<p class="" style="margin-top: 10px;font-size: 15px;">May I request a minute of your time to review the change request form?</p>
+
+<p class="" style="margin-top: 10px;font-size: 15px;">Kindly click 
+<a href="http://mystic.slim.api.remotestaff.com.au/projects/approve?email=<?php echo $email;?>&approved=yes&name=<?php echo $name; ?>">here</a> 
+(approve) if you agree to this change request or click 
+<a href="http://mystic.slim.api.remotestaff.com.au/projects/approve?email=<?php echo $email;?>&approved=no&name=<?php echo $name; ?>">here</a>  
+(disapproved) to reject.</p>
+
+<br>
+
+<p class="" style="margin-top: 10px;font-size: 15px;">This is a system generated, do not reply.</p>
+<p class="" style="margin-top: 10px;font-size: 15px;"><span style="font-weight: bold;">Remote staff System</span></p>
+
+
+<style>
+    img     {height: 75px;}
+    p    {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .description{
+
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+</style>
+    
